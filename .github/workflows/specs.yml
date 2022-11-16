@@ -24,6 +24,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12.13.1
+      - uses: codecov/codecov-action@v3
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
@@ -35,5 +36,3 @@ jobs:
       - run: bundle exec rake db:test:prepare
       - run: bundle exec rspec
       - run: bundle exec cucumber
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
