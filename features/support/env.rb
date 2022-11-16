@@ -14,8 +14,8 @@ SimpleCov.start 'rails' do
 end
 
 if ENV['CI']
-  require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  # require 'codecov'
+  # SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
 require 'cucumber/rails'

@@ -11,15 +11,13 @@ class Representative < ApplicationRecord
       title_temp = ''
 
       rep_info.offices.each do |office|
-        if office.official_indices.include? index
-          title_temp = office.name
-          ocdid_temp = office.division_id
-        end
-      end
+        next unless office.official_indices.include? index
 
-      rep = Representative.create!({ name: official.name, ocdid: ocdid_temp,
-          title: title_temp })
-      reps.push(rep)
+        title_temp = office.name
+        ocdid_temp = office.division_id
+        rep = Representative.create!({ name: official.name, ocdid: ocdid_temp, title: title_temp })
+        reps.push(rep)
+      end
     end
 
     reps
