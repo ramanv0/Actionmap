@@ -33,9 +33,9 @@ jobs:
       - run: yarn install
       - run: bundle exec rake db:setup
       - run: bundle exec rake db:test:prepare
+      - run: bundle exec cucumber
       - run: |
           curl -Os https://uploader.codecov.io/latest/linux/codecov
           chmod +x codecov
           ./codecov -t ${CODECOV_TOKEN}
       - run: bundle exec rspec
-      - run: bundle exec cucumber
