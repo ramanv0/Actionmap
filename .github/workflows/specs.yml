@@ -35,8 +35,7 @@ jobs:
       - run: bundle exec rake db:test:prepare
       - run: bundle exec rspec
       - run: bundle exec cucumber
-      - name: Upload coverage reports to Codecov
-        run: |
+      - run: |
           curl -Os https://uploader.codecov.io/latest/macos/codecov
           chmod +x codecov
-          ./codecov
+          ./codecov -t ${CODECOV_TOKEN}
