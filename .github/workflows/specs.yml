@@ -38,4 +38,4 @@ jobs:
       - run: |
           curl -Os https://uploader.codecov.io/latest/macos/codecov
           chmod +x codecov
-          ./codecov -t 0a67abda-d434-480b-a0f3-d9b8132ce547
+          ./codecov -t ${CODECOV_TOKEN}
