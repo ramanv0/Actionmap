@@ -47,3 +47,5 @@ jobs:
           files: ./coverage/.resultset.json
           fail_ci_if_error: false
           verbose: true
+          ignore:
+            - "lib"
