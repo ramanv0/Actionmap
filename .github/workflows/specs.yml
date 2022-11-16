@@ -36,6 +36,6 @@ jobs:
       - run: bundle exec rspec
       - run: bundle exec cucumber
       - run: |
-          curl -Os https://uploader.codecov.io/latest/linux/codecov
+          curl -Os https://uploader.codecov.io/latest/macos/codecov
           chmod +x codecov
-          ./codecov -t ${CODECOV_TOKEN}
+          ./codecov -t 0a67abda-d434-480b-a0f3-d9b8132ce547
