@@ -13,3 +13,8 @@ Scenario: search for representatives
     Then I should see "Rob Bonta"
     Then I should see "Phong La"
 
+Scenario: search for representative that already exists in th db
+    When I move to the search page with address "415 Mission St, San Francisco, CA"
+    When I move to the search page with address "1 Ferry Building, San Francisco, CA"
+    Then I should see "Gavin Newsom"
+    Then I should see "Eleni Kounalakis"
