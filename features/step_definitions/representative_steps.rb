@@ -19,6 +19,12 @@ Then /^(?:|I )should get to "(.*)" profile page$/ do |rep_name|
   end
 end
 
+When /^(?:|I )click on "([^"]*)"$/ do |link|
+  within(".text-center.unique") do
+    click_on(link)
+  end
+end
+
 Given /^(?:|I )move to the news page of "(.*)"$/ do |rep_name|
   rep = Representative.find_by(name: rep_name)
   visit(representative_news_items_path(representative_id: rep.id))

@@ -14,38 +14,28 @@ class Representative < ApplicationRecord
       photo_temp = ''
 
       rep_info.offices.each do |office|
-        if office.official_indices.include? index
-          title_temp = office.name
-          ocdid_temp = office.division_id
+        next unless office.official_indices.include? index
 
+        title_temp = office.name
+        ocdid_temp = office.division_id
+        party_temp = official.party
+        photo_temp = official.photo_url
+
+        official.address&.each do |address|
+          street_name = ''
+          if address.line1 != nil
+            street_name = street_name + address.line1
+          elsif address.line2 != nil
+            street_name = street_name + address.line2
+          elsif address.line3 != nil
+            street_name = street_name + address.line3
+          end
+          address_temp = street_name + address.city + address.state + address.zip
         end
-
+        rep = Representative.find_or_create_by!({ name: official.name, ocdid: ocdid_temp, title: title_temp, party: party_temp, photo_url: photo_temp, address: address_temp})
+        reps.push(rep)
       end
-      official.address&.each do |address|
-        address_temp = address
-      end
-      #Get part and pphotoURL just by declaring, just if they are null, then pass as empty string
-      official.party = party_temp
-      official.photo_url = photo_temp
-      # create_table "representatives", force: :cascade do |t|
-      #   t.string "name"
-      #   t.datetime "created_at", null: false
-      #   t.datetime "updated_at", null: false
-      #   t.string "ocdid"
-      #   t.string "title"
-      #   t.string "party"
-      #   t.string "photo_url"
-      #   t.string "address"
-      # end
-      #Check is representative exists, if it does then use update method
-      if Representative.where(name).exists() != nil
-        rep = Representative.update!({ name: official.name, ocdid: ocdid_temp, title: title_temp, party: party_temp, photo_url: photo_temp, address: address_temp})
-      else
-        rep = Representative.create!({ name: official.name, ocdid: ocdid_temp, title: title_temp, party: party_temp, photo_url: photo_temp, address: address_temp})
-      end
-      reps.push(rep)
     end
-
     reps
   end
 end
