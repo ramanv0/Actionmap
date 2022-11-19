@@ -13,7 +13,7 @@ Scenario: access representative profile from search result page
   Then I follow "Joseph R. Biden"
   Then I should get to "Joseph R. Biden" profile page
   Then I should see "Joseph R. Biden"
-  And I should see "1600 Pennsylvania Avenue NorthwestWashingtonDC20500"
+  And I should see "1600 Pennsylvania Avenue Northwest, Washington, DC, 20500"
   And I should see "Democratic"
 
 Scenario: access representative profile from news list page
@@ -25,5 +25,5 @@ Scenario: access representative profile from news list page
   Then I click on "Dianne Feinstein"
   Then I should get to "Dianne Feinstein" profile page
   Then I should see "Dianne Feinstein"
-  And I should see "331 Hart Senate Office Building Washington, DC 20510"
+  And I should see "United States Senate, 331 Hart Senate Office Building, Washington, DC, 20510"
   And I should see "Democratic"

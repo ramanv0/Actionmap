@@ -9,9 +9,18 @@
                             %th Office
                             %th Political Party
                             %th Contact Address
+                            %th Photo
                         %tr
                             %td
                                 = @rep.name
+                            %td
                                 = @rep.ocdid
+                            %td
                                 = @rep.party
+                            %td
                                 = @rep.address
+                            %td
+                                - if @rep.photo_url.nil?
+                                    Representative has no photo
+                                - else
+                                    = image_tag(@rep.photo_url)
