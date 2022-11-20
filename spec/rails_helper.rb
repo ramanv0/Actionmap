@@ -3,13 +3,13 @@
 # See: https://github.com/codecov/example-ruby
 
 require 'simplecov'
-
 SimpleCov.start 'rails' do
   add_filter 'lib'
-  # Disambiguates individual test runs. Name this 'Cucumber tests' in the env.rb
-  command_name 'RSpec Tests'
-  formatter SimpleCov::Formatter::MultiFormatter.new([SimpleCov::Formatter::SimpleFormatter,
-                                                      SimpleCov::Formatter::HTMLFormatter])
+end
+
+if ENV['CI']
+  # require 'codecov'
+  # SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
