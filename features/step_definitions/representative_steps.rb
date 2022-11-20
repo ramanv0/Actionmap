@@ -9,6 +9,22 @@ When /^(?:|I )move to the profile page of (.+)$/ do |rep_name|
   visit(representative_path(id: rep.id))
 end
 
+When /^(?:|I )move to the all representative page$/ do
+  visit('/representatives')
+end
+
+When /^(?:|I )move to the user login page$/ do
+  visit('/login')
+end
+
+When /^(?:|I )logout$/ do
+  visit('/logout')
+end
+
+When /^(?:|I )navigate to state "(.*)"$/ do |state_symbol|
+  visit("/state/#{state_symbol}")
+end
+
 Then /^(?:|I )should get to "(.*)" profile page$/ do |rep_name|
   current_path = URI.parse(current_url).path
   rep = Representative.find_by(name: rep_name)
