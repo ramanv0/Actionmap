@@ -9,13 +9,13 @@
 # See: https://github.com/codecov/example-ruby
 
 require 'simplecov'
+
 SimpleCov.start 'rails' do
   add_filter 'lib'
-end
-
-if ENV['CI']
-  # require 'codecov'
-  # SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  # Disambiguates individual test runs. Name this 'Cucumber tests' in the env.rb
+  command_name 'Cucumber Tests'
+  formatter SimpleCov::Formatter::MultiFormatter.new([SimpleCov::Formatter::SimpleFormatter,
+                                                      SimpleCov::Formatter::HTMLFormatter])
 end
 
 require 'cucumber/rails'

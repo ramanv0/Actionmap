@@ -18,3 +18,7 @@ Scenario: search for representative that already exists in th db
     When I move to the search page with address "1 Ferry Building, San Francisco, CA"
     Then I should see "Gavin Newsom"
     Then I should see "Eleni Kounalakis"
+
+Scenario: open the page to search for other representatives by address
+    When I move to the all representative page
+    Then I should see "Search for a Representative"
