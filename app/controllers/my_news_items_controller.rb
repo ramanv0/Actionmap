@@ -25,7 +25,7 @@ class MyNewsItemsController < SessionController
                                           sortBy: 'popularity',
                                           pageSize: 5)
     params[:top_five_articles] = top_five_articles
-    redirect_to representative_second_page_path
+    # redirect_to representative_second_page_path - uncomment when you implement view
   end
 
   def second_page
