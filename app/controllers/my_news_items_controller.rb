@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'news-api'
+
 class MyNewsItemsController < SessionController
   before_action :set_representative
   before_action :set_representatives_list
@@ -10,6 +12,25 @@ class MyNewsItemsController < SessionController
   end
 
   def edit; end
+
+  def select_representative_issue
+    # make api call, store in params hash
+    # redirect to second page
+    news_api_key = Rails.application.credentials[:NEWS_API_KEY]
+    newsapi = News.new(news_api_key)  
+    representative = Representative.find(params[:news_item][:representative_id])
+    keywords_to_search = representative.name + " AND " + params[:news_item][:issue]
+    top_five_articles = newsapi.get_everything(q: keywords_to_search ,
+                                          language: 'en',
+                                          sortBy: 'popularity',
+                                          pageSize: 5)
+    params[:top_five_articles] = top_five_articles
+    redirect_to representative_second_page_path
+  end
+
+  def second_page
+    # implement second page controller here
+  end
 
   def create
     @news_item = NewsItem.new(news_item_params)
