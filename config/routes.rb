@@ -32,6 +32,14 @@ Rails.application.routes.draw do
             :as                                                    => :new_my_news_item
         match '/representatives/:representative_id/my_news_item/new', to:  'my_news_items#create',
                                                                       via: [:post]
+        get '/representatives/:representative_id/my_news_item/first' => 'my_news_items#select_representative_issue',
+            :as                                                      => :first_page
+        match '/representatives/:representative_id/my_news_item/first', to:  'my_news_items#select_representative_issue',
+                                                                        via: [:post]
+        get '/representatives/:representative_id/my_news_item/second' => 'my_news_items#second_page',
+            :as                                                       => :second_page
+        match '/representatives/:representative_id/my_news_item/second', to:  'my_news_items#second_page',
+                                                                         via: [:post]
         get '/representatives/:representative_id/my_news_item/:id' => 'my_news_items#edit',
             :as                                                    => :edit_my_news_item
         match '/representatives/:representative_id/my_news_item/:id', to:  'my_news_items#update',
