@@ -23,11 +23,11 @@ class MyNewsItemsController < SessionController
                                                sortBy:   'popularity',
                                                pageSize: 5)
     params[:top_five_articles] = top_five_articles
-    # redirect_to representative_second_page_path - uncomment when you implement view
+    redirect_to representative_second_page_path
   end
 
   def second_page
-    # implement second page controller here - route setup already
+    @representative = Representative.find(params[:representative_id])
   end
 
   def create
