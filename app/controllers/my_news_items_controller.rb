@@ -22,11 +22,12 @@ class MyNewsItemsController < SessionController
                                                language: 'en',
                                                sortBy:   'popularity',
                                                pageSize: 5)
-    params[:top_five_articles] = top_five_articles
+    session[:top_five_articles] = top_five_articles
     redirect_to representative_second_page_path
   end
 
   def second_page
+    # top five articles now available in session[:top_five_articles]
     @representative = Representative.find(params[:representative_id])
   end
 
