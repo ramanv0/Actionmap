@@ -16,6 +16,9 @@
             = label :news_item, :issue, class: 'col-form-label'
         .col-sm-10
             = text_field :news_item, :issue, value: issue, readonly: true
+    .form-group.row
+        .col-sm-10
+            = label :news_item, :title, 'Select an article:', class: 'col-form-label'
     .text-center
         .actions
             = f.submit 'Save', class: 'btn btn-primary'

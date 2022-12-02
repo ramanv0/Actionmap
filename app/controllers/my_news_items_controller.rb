@@ -16,19 +16,22 @@ class MyNewsItemsController < SessionController
   def select_representative_issue
     news_api_key = Rails.application.credentials[:NEWS_API_KEY]
     newsapi = News.new(news_api_key)
-    representative = Representative.find_by(params[:news_item][:representative_id])
+    representative = Representative.find(params[:news_item][:representative_id])
     keywords_to_search = "#{representative.name} AND #{params[:news_item][:issue]}"
     top_five_articles = newsapi.get_everything(q:        keywords_to_search,
                                                language: 'en',
                                                sortBy:   'popularity',
                                                pageSize: 5)
     session[:top_five_articles] = top_five_articles
-    redirect_to representative_second_page_path
+    session[:news_item] = params[:news_item]
+    redirect_to representative_second_page_path(params[:news_item][:representative_id])
   end
 
   def second_page
-    # top five articles now available in session[:top_five_articles]
-    @representative = Representative.find(params[:representative_id])
+    # all resources needed to implement the view are forwarded
+    @representative = Representative.find(session[:news_item][:representative_id])
+    @issue = session[:news_item][:issue]
+    @articles = session[:top_five_articles]
     @news_item = NewsItem.new
   end
 
