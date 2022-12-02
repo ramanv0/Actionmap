@@ -23,12 +23,16 @@ class MyNewsItemsController < SessionController
                                                sortBy:   'popularity',
                                                pageSize: 5)
     session[:top_five_articles] = top_five_articles
-    redirect_to representative_second_page_path
+    session[:news_item] = params[:news_item]
+    redirect_to representative_second_page_path(params[:news_item][:representative_id])
   end
 
   def second_page
-    # top five articles now available in session[:top_five_articles]
-    @representative = Representative.find(params[:representative_id])
+    # all resources needed to implement the view are forwarded
+    @representative = Representative.find(session[:news_item][:representative_id])
+    @issue = session[:news_item][:issue]
+    @articles = session[:top_five_articles]
+    @news_item = NewsItem.new
   end
 
   def create
