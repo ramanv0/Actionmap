@@ -10,12 +10,12 @@
         .col-sm-2
             = label :news_item, :representative_id, class: 'col-form-label'
         .col-sm-10
-            = link_to @representative.name, representative_path(id: @representative.id)
+            = link_to representative.name, representative_path(id: representative.id)
     .form-group.row
         .col-sm-2
             = label :news_item, :issue, class: 'col-form-label'
         .col-sm-10
-            = text_field :news_item, :issue, :value => @issue, :readonly => true
+            = text_field :news_item, :issue, value: issue, readonly: true
     .text-center
         .actions
             = f.submit 'Save', class: 'btn btn-primary'
