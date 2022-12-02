@@ -16,7 +16,7 @@ class MyNewsItemsController < SessionController
   def select_representative_issue
     news_api_key = Rails.application.credentials[:NEWS_API_KEY]
     newsapi = News.new(news_api_key)
-    representative = Representative.find(params[:news_item][:representative_id])
+    representative = Representative.find_by(params[:news_item][:representative_id])
     keywords_to_search = "#{representative.name} AND #{params[:news_item][:issue]}"
     top_five_articles = newsapi.get_everything(q:        keywords_to_search,
                                                language: 'en',
@@ -28,6 +28,7 @@ class MyNewsItemsController < SessionController
 
   def second_page
     @representative = Representative.find(params[:representative_id])
+    @news_item = NewsItem.new
   end
 
   def create
