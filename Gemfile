@@ -34,6 +34,8 @@ gem 'google-api-client', '~> 0.34'
 # News API
 gem 'news-api', '~> 0.0.0'
 
+gem 'activerecord-session_store'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
