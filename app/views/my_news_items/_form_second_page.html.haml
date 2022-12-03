@@ -1,4 +1,8 @@
 = form_for news_item, url: form_url, html: { method: form_method } do |f|
+    - flash.each do |_type, msg|
+        .alert.alert-info
+            %div
+                = msg
     - if news_item.errors.any?
         .alert.alert-danger
             %h2
@@ -7,20 +11,45 @@
                 - news_item.errors.full_messages.each do |message|
                     %li= message
     .form-group.row
-        .col-sm-2
-            = label :news_item, :representative_id, class: 'col-form-label'
-        .col-sm-10
+        .col-sm-4
+            %p Representative:
+        .col-sm-5
             = link_to representative.name, representative_path(id: representative.id)
         .col-sm-1
             = hidden_field :news_item, :representative_id, value: representative.id
     .form-group.row
-        .col-sm-2
-            = label :news_item, :issue, class: 'col-form-label'
-        .col-sm-10
-            = text_field :news_item, :issue, value: issue, readonly: true
+        .col-sm-4
+            %p Issue:
+        .col-sm-5
+            = issue
+        .col-sm-1
+            = hidden_field :news_item, :issue, value: issue
     .form-group.row
+        .col-sm-4
+            %p Select an article:
+        .col-sm-8
+            %ol
+                .row-5
+                - articles.each do |article|
+                    = f.radio_button :all_info, [article.title, article.url, article.description]
+                    %span
+                        %strong Title:
+                        %span= article.title
+                    %br
+                    %span
+                        %strong Link:
+                        %span= link_to article.url, article.url
+                    %br
+                    %span
+                        %strong Description:
+                        %span= article.description
+                    %br
+    .form-group.row
+        .col-sm-2
+            = label :news_item, :rating, class: 'col-form-label'
         .col-sm-10
-            = label :news_item, :title, 'Select an article:', class: 'col-form-label'
+            = select :news_item, :rating, [*1..10], { include_blank: true },
+            class: 'form-control'
     .text-center
         .actions
             = f.submit 'Save', class: 'btn btn-primary'
