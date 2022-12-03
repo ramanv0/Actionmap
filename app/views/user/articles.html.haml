@@ -1,0 +1,24 @@
+.row.mt-2
+    .col-12.col-md-6.offset-md-3.col-xl-4.offset-xl-4
+        %h3.text-center
+            Your Rated News Articles
+        %ul
+            - @ratings.each do |rating_obj|
+                .card-body
+                    .card-text
+                        %dl.row
+                            %dt.col-sm-3.text-md-right Title:
+                            %dt.col-sm-9
+                                = rating_obj.title
+                        %dl.row
+                            %dt.col-sm-3.text-md-right Link:
+                            %dt.col-sm-9
+                                = link_to rating_obj.link, rating_obj.link
+                        %dl.row
+                            %dt.col-sm-3.text-md-right Description:
+                            %dt.col-sm-9
+                                = rating_obj.description
+                        %dl.row
+                            %dt.col-sm-3.text-md-right Rating:
+                            %dt.col-sm-9
+                                = rating_obj.rating
