@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get '/auth/github/callback', to: 'login#github', as: :github_callback
     get '/logout' => 'login#logout', :as => :logout
     get '/user/profile', to: 'user#profile', as: :user_profile
+    get '/user/articles', to: 'user#articles', as: :user_articles
 
     root to: 'map#index', as: 'root'
     get '/state/:state_symbol' => 'map#state', :as => :state_map
@@ -46,6 +47,9 @@ Rails.application.routes.draw do
                                                                       via: %i[put patch]
         match '/representatives/:representative_id/my_news_item/:id', to:  'my_news_items#destroy',
                                                                       via: [:delete]
+        
     end
     get '/search/(:address)' => 'search#search', :as => 'search_representatives'
+
+    get '/representatives/:representative_id/my_news_item/rate' => 'my_news_items#rate', :as => :rate_my_news_item
 end

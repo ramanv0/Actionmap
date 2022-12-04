@@ -28,11 +28,33 @@ class MyNewsItemsController < SessionController
   end
 
   def second_page
-    # all resources needed to implement the view are forwarded
-    @representative = Representative.find(session[:news_item][:representative_id])
-    @issue = session[:news_item][:issue]
+    form_news_item = session[:news_item]
+    @representative = Representative.find(form_news_item[:representative_id])
+    @issue = form_news_item[:issue]
     @articles = session[:top_five_articles]
     @news_item = NewsItem.new
+    return if form_news_item[:all_info].nil? && form_news_item[:rating].nil?
+
+    redirect_to rate_my_news_item_path
+    # puts(Rating.find_by(user_id: curr_user.id).title) - confirm that rating is stored in ratings table properly
+  end
+
+  def rate
+    form_news_item = session[:news_item]
+    flash[:success] = 'Article successfully rated!'
+    attr_hash = article_attrs(form_news_item[:all_info], form_news_item[:rating])
+    rating = Current.user.ratings.find_by(title: attr_hash[:title], link: attr_hash[:link],
+                                          description: attr_hash[:description])
+    if rating.nil?
+      Current.user.ratings.create(title: attr_hash[:title], link: attr_hash[:link],
+                                  description: attr_hash[:description],
+                                  rating: attr_hash[:rating])
+    else
+      rating.rating = attr_hash[:rating]
+      rating.save
+    end
+
+    redirect_to user_articles_path
   end
 
   def create
@@ -78,6 +100,16 @@ class MyNewsItemsController < SessionController
 
   # Only allow a list of trusted parameters through.
   def news_item_params
-    params.require(:news_item).permit(:news, :title, :description, :link, :representative_id)
+    params.require(:news_item).permit(:news, :title, :description, :link, :representative_id, :rating, :all_info)
+  end
+
+  def article_attrs(all_info, rating)
+    article_title = all_info.split(/(?=https)/)[0]
+    rest_of_string = all_info.split(/(?=https)/)[1]
+    article_link = rest_of_string.split[0]
+    rest_of_string.slice!(article_link)
+    article_description = rest_of_string
+    article_rating = rating.to_i
+    { title: article_title, link: article_link, description: article_description, rating: article_rating }
   end
 end

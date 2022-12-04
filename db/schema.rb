@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_02_004109) do
+ActiveRecord::Schema.define(version: 2022_12_03_115012) do
 
   create_table "counties", force: :cascade do |t|
     t.string "name", null: false
@@ -41,7 +41,20 @@ ActiveRecord::Schema.define(version: 2022_12_02_004109) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "issue"
+    t.integer "rating"
+    t.text "all_info", default: "--- []\n"
     t.index ["representative_id"], name: "index_news_items_on_representative_id"
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "link", null: false
+    t.text "description"
+    t.integer "rating", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "representatives", force: :cascade do |t|
