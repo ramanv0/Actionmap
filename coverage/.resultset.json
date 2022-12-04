@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/state.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/state.rb": {
         "lines": [
           null,
           null,
@@ -15,7 +15,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/application_record.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -24,7 +24,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/map_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/map_controller.rb": {
         "lines": [
           null,
           null,
@@ -76,7 +76,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/application_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -87,16 +87,16 @@
           1,
           null,
           1,
-          58,
+          66,
           null,
           null,
           1,
-          29,
+          33,
           null,
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/application_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
@@ -139,7 +139,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/my_news_items_controller_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/my_news_items_controller_helper.rb": {
         "lines": [
           null,
           null,
@@ -147,7 +147,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/news_item_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/news_item_helper.rb": {
         "lines": [
           null,
           null,
@@ -155,7 +155,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/ratings_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/ratings_helper.rb": {
         "lines": [
           null,
           null,
@@ -163,7 +163,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/representatives_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/representatives_helper.rb": {
         "lines": [
           null,
           null,
@@ -171,7 +171,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/session_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/session_helper.rb": {
         "lines": [
           null,
           null,
@@ -179,7 +179,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/county.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/county.rb": {
         "lines": [
           null,
           null,
@@ -193,7 +193,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/login_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/login_controller.rb": {
         "lines": [
           null,
           null,
@@ -272,7 +272,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/user.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/user.rb": {
         "lines": [
           null,
           null,
@@ -311,7 +311,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/current.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/current.rb": {
         "lines": [
           null,
           null,
@@ -320,7 +320,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/search_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/search_controller.rb": {
         "lines": [
           null,
           null,
@@ -339,7 +339,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/representative.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/representative.rb": {
         "lines": [
           null,
           null,
@@ -394,7 +394,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/news_items_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/news_items_controller.rb": {
         "lines": [
           null,
           null,
@@ -422,7 +422,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/news_item.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/news_item.rb": {
         "lines": [
           null,
           null,
@@ -444,7 +444,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/my_news_items_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/my_news_items_controller.rb": {
         "lines": [
           null,
           null,
@@ -462,128 +462,137 @@
           1,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          27,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/session_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
+          2,
+          2,
+          2,
+          2,
           2,
           null,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/representatives_controller.rb": {
-        "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
           null,
           null,
           1,
           2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          null,
+          null,
+          1,
+          135,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/user_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/session_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          6,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/rating.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/representatives_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/user_controller.rb": {
         "lines": [
           null,
           null,
@@ -599,10 +608,13 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/mailers/application_mailer.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/ajax_controller.rb": {
         "lines": [
           null,
           null,
+          null,
+          0,
+          0,
           0,
           0,
           0,
@@ -611,51 +623,7 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/rating.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/event.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/jobs/application_job.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/events_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/events_controller.rb": {
         "lines": [
           null,
           null,
@@ -692,13 +660,49 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/ajax_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/my_events_controller.rb": {
         "lines": [
           null,
           null,
+          0,
+          0,
           null,
           0,
           0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
           0,
           0,
           0,
@@ -707,7 +711,29 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/my_events_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/event.rb": {
         "lines": [
           null,
           null,
@@ -717,38 +743,10 @@
           0,
           0,
           0,
-          null,
-          0,
-          null,
           0,
           0,
           null,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
           null,
           0,
           0,
@@ -759,11 +757,11 @@
         }
       }
     },
-    "timestamp": 1670108000
+    "timestamp": 1670119366
   },
   "RSpec": {
     "coverage": {
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/application_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
@@ -806,7 +804,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/my_news_items_controller_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/my_news_items_controller_helper.rb": {
         "lines": [
           null,
           null,
@@ -814,7 +812,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/news_item_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/news_item_helper.rb": {
         "lines": [
           null,
           null,
@@ -822,7 +820,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/ratings_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/ratings_helper.rb": {
         "lines": [
           null,
           null,
@@ -830,7 +828,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/representatives_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/representatives_helper.rb": {
         "lines": [
           null,
           null,
@@ -838,7 +836,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/helpers/session_helper.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/session_helper.rb": {
         "lines": [
           null,
           null,
@@ -846,7 +844,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/search_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/search_controller.rb": {
         "lines": [
           null,
           null,
@@ -865,7 +863,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/application_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -885,7 +883,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/representative.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/representative.rb": {
         "lines": [
           null,
           null,
@@ -940,7 +938,7 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/application_record.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -949,126 +947,11 @@
           null
         ]
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/mailers/application_mailer.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/ajax_controller.rb": {
         "lines": [
           null,
           null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/state.rb": {
-        "lines": [
           null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/county.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/current.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/rating.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/event.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/user.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           0,
           0,
           0,
@@ -1079,116 +962,7 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/models/news_item.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/jobs/application_job.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/map_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/session_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/events_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/events_controller.rb": {
         "lines": [
           null,
           null,
@@ -1225,180 +999,7 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/my_news_items_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/ajax_controller.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/my_events_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/login_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/login_controller.rb": {
         "lines": [
           null,
           null,
@@ -1479,7 +1080,109 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/representatives_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/my_events_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/news_items_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/session_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/representatives_controller.rb": {
         "lines": [
           null,
           null,
@@ -1496,13 +1199,88 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/news_items_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/map_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/user_controller.rb": {
         "lines": [
           null,
           null,
           0,
           0,
           0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/controllers/my_news_items_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
           null,
           0,
           0,
@@ -1511,11 +1289,146 @@
           0,
           null,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           0,
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/county.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/event.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
           0,
           null,
           0,
@@ -1526,15 +1439,100 @@
         "branches": {
         }
       },
-      "/Users/ramanvarma/fa22-actionmap-fa22-21/app/controllers/user_controller.rb": {
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/state.rb": {
         "lines": [
           null,
           null,
           0,
           0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/current.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/news_item.rb": {
+        "lines": [
+          null,
+          null,
           0,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/rating.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/models/user.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
           0,
           0,
           0,
@@ -1545,6 +1543,6 @@
         }
       }
     },
-    "timestamp": 1670108154
+    "timestamp": 1670119514
   }
 }
