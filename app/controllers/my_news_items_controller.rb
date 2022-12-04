@@ -35,12 +35,26 @@ class MyNewsItemsController < SessionController
     @news_item = NewsItem.new
     return if form_news_item[:all_info].nil? && form_news_item[:rating].nil?
 
+    redirect_to rate_my_news_item_path
+    # puts(Rating.find_by(user_id: curr_user.id).title) - confirm that rating is stored in ratings table properly
+  end
+
+  def rate
+    form_news_item = session[:news_item]
     flash[:success] = 'Article successfully rated!'
     attr_hash = article_attrs(form_news_item[:all_info], form_news_item[:rating])
-    Current.user.ratings.create(title: attr_hash[:title], link: attr_hash[:link],
-                                description: attr_hash[:description],
-                                rating: attr_hash[:rating])
-    # puts(Rating.find_by(user_id: curr_user.id).title) - confirm that rating is stored in ratings table properly
+    rating = Current.user.ratings.find_by(title: attr_hash[:title], link: attr_hash[:link],
+                                          description: attr_hash[:description])
+    if rating.nil?
+      Current.user.ratings.create(title: attr_hash[:title], link: attr_hash[:link],
+                                  description: attr_hash[:description],
+                                  rating: attr_hash[:rating])
+    else
+      rating.rating = attr_hash[:rating]
+      rating.save
+    end
+
+    redirect_to user_articles_path
   end
 
   def create
