@@ -2,6 +2,7 @@
 
 class NewsItem < ApplicationRecord
   belongs_to :representative
+  serialize :all_info, Array
 
   def self.find_for(representative_id)
     NewsItem.find_by(
