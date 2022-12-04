@@ -139,6 +139,14 @@
           null
         ]
       },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/my_news_items_controller_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
       "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/news_item_helper.rb": {
         "lines": [
           null,
@@ -475,19 +483,6 @@
           2,
           2,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
           null,
           null,
@@ -776,7 +771,7 @@
         }
       }
     },
-    "timestamp": 1670123937
+    "timestamp": 1670124543
   },
   "RSpec": {
     "coverage": {
@@ -820,6 +815,14 @@
           null,
           0,
           null,
+          null
+        ]
+      },
+      "/home/codio/workspace/fa22-actionmap-fa22-21/app/helpers/my_news_items_controller_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
           null
         ]
       },
@@ -1321,19 +1324,6 @@
           0,
           0,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           0,
           null,
           0,
@@ -1581,6 +1571,6 @@
         }
       }
     },
-    "timestamp": 1670123919
+    "timestamp": 1670124525
   }
 }
