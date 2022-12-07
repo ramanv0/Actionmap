@@ -36,7 +36,7 @@ class MyNewsItemsController < SessionController
     if form_news_item[:from_first]
       flash.clear
       nil
-    elsif !form_news_item[:all_info].nil? && !form_news_item[:rating].nil?
+    elsif !form_news_item[:all_info].nil? or !form_news_item[:rating].nil?
       redirect_to rate_my_news_item_path
     else
       flash[:failure] = 'Article not rated! Please select an article and a rating.'
