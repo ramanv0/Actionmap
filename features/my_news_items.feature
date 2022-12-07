@@ -27,10 +27,9 @@ Scenario: add news articles by filtering using issues
   Then I press "Search"
   Then I should see "Select an article:"
   And I should see "Rating"
-  Then I choose "news_item_all_info_the_united_states_of_political_violence_httpstimecom6227754political-violence-us-states-midterms-2022_to_better_understand_how_the_threat_of_violence_against_public_officials_is_transforming_america_time_collected_50_case_studiesone_from_each_statesince_the_attack_on_the_us_capitol_on_jan_6_2021"
+  When I select an article
   And I select "10" from "Rating"
   Then I press "Save"
   Then I should be on the user_articles page
   Then I should see "Article successfully rated!"
-  And I should see "The United States of Political Violence"
   And I should see "10"

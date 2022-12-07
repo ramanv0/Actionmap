@@ -33,10 +33,14 @@ class MyNewsItemsController < SessionController
     @issue = form_news_item[:issue]
     @articles = session[:top_five_articles]
     @news_item = NewsItem.new
-    return if form_news_item[:all_info].nil? && form_news_item[:rating].nil?
-
-    redirect_to rate_my_news_item_path
-    # puts(Rating.find_by(user_id: curr_user.id).title) - confirm that rating is stored in ratings table properly
+    if form_news_item[:from_first]
+      flash.clear
+      nil
+    elsif !form_news_item[:all_info].nil? && !form_news_item[:rating].nil?
+      redirect_to rate_my_news_item_path
+    else
+      flash[:failure] = 'Article not rated! Please select an article and a rating.'
+    end
   end
 
   def rate
@@ -53,7 +57,6 @@ class MyNewsItemsController < SessionController
       rating.rating = attr_hash[:rating]
       rating.save
     end
-
     redirect_to user_articles_path
   end
 
