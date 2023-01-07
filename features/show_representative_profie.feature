@@ -20,7 +20,7 @@ Scenario: access representative profile from news list page
   Given I move to the search page with address "9450 Gilman Dr, La Jolla, CA"
   Then I should see "Alex Padilla"
   And I should see "Dianne Feinstein"
-  And I should see "Mike Levin"
+  And I should see "Tony Thurmond"
   And I move to the news page of "Dianne Feinstein"
   Then I click on "Dianne Feinstein"
   Then I should get to "Dianne Feinstein" profile page
