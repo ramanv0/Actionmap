@@ -12,7 +12,3 @@ political events in their area as well as aggregate, share and view news items i
 
 *CodeCov badge removed*
 <!--- [![codecov](https://codecov.io/gh/cs169/fa22-actionmap-fa22-21/branch/master/graph/badge.svg?token=Lcwc6nGQti)](https://codecov.io/gh/cs169/fa22-actionmap-fa22-21) -->
-
-### Getting Setup Locally
-
-Follow the [Getting Started Guide](./docs/01-getting-started.md) to get your localhost environment setup.
