@@ -10,5 +10,5 @@ political events in their area as well as aggregate, share and view news items i
 
 [![All Specs](https://github.com/cs169/fa22-actionmap-fa22-21/actions/workflows/specs.yml/badge.svg)](https://github.com/cs169/fa22-actionmap-fa22-21/actions/workflows/specs.yml)
 
-*CodeCov badge removed*
-<!--- [![codecov](https://codecov.io/gh/cs169/fa22-actionmap-fa22-21/branch/master/graph/badge.svg?token=Lcwc6nGQti)](https://codecov.io/gh/cs169/fa22-actionmap-fa22-21) -->
+Link to app: https://desolate-scrubland-02195.herokuapp.com/
+- The heroku app will probably be down after some time, since heroku marked free databases for deletion :(
