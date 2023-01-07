@@ -8,7 +8,7 @@ political events in their area as well as aggregate, share and view news items i
 
 </div>
 
-[![All Specs](https://github.com/cs169/fa22-actionmap-fa22-21/actions/workflows/specs.yml/badge.svg)](https://github.com/cs169/fa22-actionmap-fa22-21/actions/workflows/specs.yml)
+[![All Specs](https://github.com/ramanv0/Actionmap/actions/workflows/specs.yml/badge.svg)](https://github.com/ramanv0/Actionmap/actions/workflows/specs.yml)
 
 Link to app: https://desolate-scrubland-02195.herokuapp.com/
 - The heroku app will probably be down after some time, since heroku marked free databases for deletion :(
